@@ -1,19 +1,16 @@
 <template>
   <q-page class="flex flex-center">
-    <q-card-media>
-        <q-btn round color="primary" class="pull-right on-left">+</q-btn>
-        <q-btn round color="secondary" class="pull-right on-left">-</q-btn>
-    </q-card-media>
+   <Counter />
   </q-page>
 </template>
-
 <style>
 </style>
-
 <script>
+import Counter from '../components/counter'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: {
+    Counter
+  }
 }
-
-
 </script>
