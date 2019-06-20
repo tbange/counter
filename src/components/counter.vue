@@ -9,7 +9,7 @@
       </q-card-section>
       <q-separator dark />
        <q-card-actions>
-        <q-btn flat>-</q-btn>
+        <q-btn flat @click = "decrement">-</q-btn>
         <q-btn flat @click = "increment">+</q-btn>
       </q-card-actions>
     </q-card>
@@ -25,7 +25,11 @@ export default {
   methods: {
     increment () {
       this.valeur = this.valeur + 1
+    },
+    decrement () {
+      this.valeur = this.valeur - 1
     }
+
   }
 
 }
