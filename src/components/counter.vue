@@ -10,7 +10,7 @@
       <q-separator dark />
        <q-card-actions>
         <q-btn flat>-</q-btn>
-        <q-btn flat>+</q-btn>
+        <q-btn flat @click = "increment">+</q-btn>
       </q-card-actions>
     </q-card>
 </template>
@@ -21,6 +21,12 @@ export default {
     return {
       valeur: 0
     }
+  },
+  methods: {
+    increment () {
+      this.valeur = this.valeur + 1
+    }
   }
+
 }
 </script>
